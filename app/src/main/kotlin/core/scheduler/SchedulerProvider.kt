@@ -1,5 +1,7 @@
-package com.schibsted.android.core.scheduler
+package core.scheduler
 
+import com.schibsted.android.core.scheduler.Scheduler
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class SchedulerProvider : Scheduler {
