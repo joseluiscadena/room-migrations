@@ -4,7 +4,7 @@ import user.data.datasource.room.Query.SELECT_FROM
 
 object UserConstants {
     const val DATABASE_USER = "user.db"
-    const val DATABASE_USER_VERSION = 1
+    const val DATABASE_USER_VERSION = 2
     const val TABLE_USER = "user"
 
     const val SELECT_USERS = SELECT_FROM + TABLE_USER
