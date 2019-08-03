@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import user.data.datasource.room.UserConstants.DATABASE_USER
 import user.data.datasource.room.UserConstants.DATABASE_USER_VERSION
 
-@Database(entities = [(UserEntity::class)], version = DATABASE_USER_VERSION , exportSchema = false)
+@Database(entities = [(UserEntity::class)], version = DATABASE_USER_VERSION , exportSchema = true)
 abstract class UserRoomDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao
