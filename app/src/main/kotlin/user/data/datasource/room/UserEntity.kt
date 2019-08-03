@@ -11,5 +11,6 @@ data class UserEntity(
     val accountId: String,
     @ColumnInfo(name = "username")
     val userName: String,
-    val email: String
+    val email: String,
+    val phone: String
 )
