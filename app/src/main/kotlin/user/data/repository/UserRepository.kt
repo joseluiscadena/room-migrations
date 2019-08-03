@@ -6,8 +6,8 @@ import user.data.datasource.room.UserRoomDataSource
 class UserRepository(private val userRoomDataSource: UserRoomDataSource) {
 
     fun insertUser(accountId: String, userName: String, email: String) =
-        userRoomDataSource.insert(UserEntity(accountId = accountId, userName = userName, email = email,
-            address = "Benito Juarez"))
+        userRoomDataSource.insert(UserEntity(accountId = accountId.toInt(), userName = userName, email = email,
+            phone = "5554962458", address = "Benito Juarez"))
 
     fun getUsers() = userRoomDataSource.getAll()
 }
